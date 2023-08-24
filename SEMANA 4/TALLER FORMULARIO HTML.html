@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CCS/frmcontacto.css">
+</head>
+<body>
+    <header>
+        <img src="./img/incap.png" alt="incap" width="100px" height="100px">
+        <h1>FORMULARIO INCAP</h1>
+
+    </header>
+    <nav>
+        <p>Este formulario es para registrar el ingreso de un estudiante</p>
+    </nav>
+    <section>
+        <!-- sección de formulario de ingreso de estudiantes -->
+        <form action="">
+            <fieldset>
+                <label for="">NOMBRE COMPLETO</label>
+                <input type="text" placeholder="Ingrese nombre completo" autofocus required>
+                <br><br>
+                <label for="">E-MAIL</label>
+                <input type="email" placeholder="Ingrese su correo personal" required><br><br>
+                <label for="">CONTRASEÑA</label>
+                <input type="password" placeholder="Ingrese su contraseña" required><br><br>
+    <!-- Sección de boton checkbook -->
+                <label for="">SELECCIONE TUS HOBBIES</label><br>
+                <input type="checkbox">Cine
+                <input type="checkbox">Lectura
+                <input type="checkbox">Deporte
+                <br><br>
+                <!-- Sección de boton radio -->
+                <label for="">ESTADO CIVIL</label>
+                <br>
+                <input type="radio" name="estado civil" value="Casado(a)"> Casado(a)
+                <input type="radio" name="estado civil" value="Soltero(a)">Soltero(a)
+                <input type="radio" name="estado civil" value="Viudo(a)">Viudo(a)<br><br>
+                <label for="">PROGRAMAS TECNICOS INCAP</label><br>
+                <select name="select" id="">
+                    <option value="">Seleccione programas</option><br>
+                    <option value="sistema">Programación BBDD</option><br>
+                    <option value="diseño">Diseño gráfico</option><br>
+                    <option value="contabilidad">Contabilidad</option><br>
+                </select>
+                <br>
+                <label for="">FECHA DE NACIMIENTO</label><br>
+                <input type="date" title="Ingrese su fecha de nacimiento"><br>
+                <label for="">Ingrese su edad</label><br>
+                <input type="number" min="1" max="120" title="Ingrese su edad"><br><br>
+                <label for="">SUBIR FOTO - COLOQUE ARCHIVO</label>
+                <input type="file" name="archivo"><br><br>
+                <textarea name="comentario" id="" cols="40" rows="5"></textarea><br><br>
+            </fieldset>
+            <br><br>
+            <!-- sección de botones de enviar y cancelar envio de datos -->
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button><br><br>
+        </form>
+    </section>
+<footer>
+    <cite>Derechos reservados &copy;2023 Alexis Rodríguez</cite>
+</footer>
+</body>
+</html>
